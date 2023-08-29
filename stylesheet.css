@@ -1,0 +1,261 @@
+.main {
+    float: left;
+    width: 60%; /* The width is 60%, by default */
+}
+body{
+    background-color: antiquewhite;
+    
+}
+h1{
+    font-size: 3rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 50;
+    color: #7a3b2e;
+
+}
+
+h2{
+    font-size:1.5rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 50;
+}
+
+h3{
+    font-size:1rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 50;
+    color: #7a3b2e;
+    text-align: center;
+    /* margin-top: 18px;
+    margin-bottom: 18px; */
+
+}
+h4{
+    font-size:0.9rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 200px;
+    /* margin-top: 18px;
+    margin-bottom: 18px; */
+
+}
+p{
+    font-size:0.9rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 50;  
+    margin: auto;
+    /* margin-top: 18px;
+    margin-bottom: 18px; */
+}
+a{
+    font-size:0.9rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 50;  
+    /* margin-top: 18px;
+    margin-bottom: 18px; */
+}
+
+.intro{
+    text-align: center;
+}
+.about_me{
+    text-align: left;
+    padding-top: 1rem;
+    width: 40%;
+    margin: auto;
+}
+.profile{
+    text-align: center;
+    padding-top: 1rem;
+    width: 40%;
+    margin: auto;
+}
+.footer{
+    text-align: center;
+    display: inline;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0.75rem;
+}
+.exp{
+    background-color: hsla(0, 0%, 99%, 0);
+    border: none;
+    font-size:0.9rem;
+    text-align: center;
+    color: #7a3b2e;
+}
+.menu{
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+}
+.typed-text {
+    display: none;
+    white-space: nowrap; /* Prevent text from breaking onto the next line */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  a{
+    text-decoration: none;
+
+  }
+a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    color: blue;
+  }
+  a:active {
+    color: rgb(128, 0, 0);
+  }
+  @media only screen and (max-width: 600px) {
+    .main {
+        float: center;
+        width: 100%; /* The width is 60%, by default */
+    }
+    .personalpic{
+        height: 50%;
+        width: 50%;
+    }
+    /* h1 {font-size: 100px;} */
+    .about_me{
+        padding-top: 0.5rem;
+        margin: auto;
+        width: 100%;
+    }
+    .profile{
+        padding-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+        display: inline;
+        margin: auto;
+        font-size: 0.75rem;
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+    }
+    .exp{
+        font-size:0.7rem;
+        color: #7a3b2e;
+    }
+    
+    h2{
+        font-size: 0.6rem;
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    h3{
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+    h4{
+        font-size: 0.6rem;
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        font-size: 0.6rem;
+        width: 100%;
+        text-align: center;
+    }
+    a{
+        font-size:  0.6rem;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width: 768px){
+    .main {
+        float: center;
+        width: 75%; /* The width is 60%, by default */
+    }
+    /* h1 {font-size: 100px;} */
+    .about_me{
+        padding-top: 0.75rem;
+        margin: auto;
+        width: 75%;
+    }
+    .profile{
+        padding-top: 0.75rem;
+        width: 75%;
+        text-align: center;
+    }
+    .menu{
+        padding: 0.75rem;
+        width: 75%;
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+        display: inline;
+        margin: auto;
+        font-size: 1rem;
+        margin-top: 1.75rem;
+        padding: 0.75rem;
+    }
+    .exp{
+        font-size:0.95rem;
+        color: #7a3b2e;
+    }
+    
+    h2{
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    h3{
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    h4{
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+    p{
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+    }
+    a{
+        font-size:  0.9rem;
+    }
+
+  }
+
+  

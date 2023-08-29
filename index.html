@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Aditya Chowdhri</title>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+    <div class="menu">
+        <a style="display: inline; padding: 1.2rem;" href="index.html">Home</a>
+        <a style="display: inline; padding: 1.2rem" href="pictures.html">Photos</a>
+    </div>
+
+    <div class="intro">
+        <h1>
+            Aditya Chowdhri
+            <!-- <span class = "auto-type"> </span> -->
+        </h1>
+        <h2>
+            <span class="careers"> </span>
+        </h2>
+    </div>
+
+
+    <script>
+        var careers = new Typed(".careers", {
+            strings: ["Data Analyst | Software Engineer | Consultant"],
+            typeSpeed: 35,
+            loop: false
+        })
+    </script>
+
+    <div class="about_me">
+        <h3>
+            About
+        </h3>
+        <!-- <img src="Pictures/headshot.png" style="border-radius: 100%;" width="15%" height="15%" class="personalpic"> -->
+        </img>
+        <p>I am a sophomore at Boston University studying CS & Econ with a minor in Data Science. I hope to gain a
+            deeper understanding in areas such as ML, and the importance of Data Science in Business. In addition, I
+            love soccer (Man Utd) and video games (LoL, Fifa, Valo, CoD, FNAF). From the range of professions listed
+            above you may ascertain that I have no idea what I want to do... and that's true. I am open to any and all
+            opportunities and want to take the next couple of years exploring different areas.</p>
+        <p>The purpose of this website is not only to promote my knowledge (its a lot trust me) but to also document my
+            interests to look back at. Happy browsing!</p>
+    </div>
+    <div class="profile">
+        <h3>Stuff I am currently working on</h3>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <h4>
+                Data_Analyst.ipynb
+                <button onclick="toggleText(this)" class="exp">[+]</button>
+                <p class="expand" style="display: none">Conducting data analysis for Dr. Burrowes to examine the
+                    racial/ethnic disparities through healthcare-associated infections
+                </p>
+            </h4>
+
+        </div>
+        <div>
+            <h4>
+                RA_@_BU_Econ_Dept.sta
+                <button onclick="toggleText(this)" class="exp">[+]</button>
+                <p class="expand" style="display: none">Researched effect of uncertainty in trade restrictions on
+                    US-Peru trade relations with Ph.D. candidate Franco Maldonado
+                </p>
+            </h4>
+
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <h4>
+                Senior_Consultant_@_BUCG.pptx
+                <button onclick="toggleText(this)" class="exp">[+]</button>
+                <p class="expand" style="display: none">Worked on two projects so far in different capacities.
+                    Recommended growth strategies for a career development platform through extensive research in a
+                    6-member team. And evaluated future growth strategies for a secondhand gear trade app through
+                    extensive competitor research and interviews with 3 internal and 5 external subject matter experts
+
+                </p>
+            </h4>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <h4>
+                Hack4Impact@BU_Hacker.js
+                <button onclick="toggleText(this)" class="exp">[+]</button>
+                <p class="expand" style="display: none">In the Fall' 23 semester I will be working with non-profit
+                    organizations to help them implement software solutions to their problems</p>
+            </h4>
+
+        </div>
+    </div>
+    <div class="profile">
+        <h3>Important CS info</h3>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <h4>
+                Languages Learned: <p style="display: inline;">console.log(5) </p>
+
+                <button onclick="toggleTextIcon(this)" class="exp" id="toggleButton"><i class="fa fa-play"
+                        aria-hidden="true"></i></button>
+                <div class="expand" style="display: none;">
+                    <p id="typedText" class="typed-text" style="display: inline;"></p>
+                </div>
+                <!-- <p class="expand" style="display: none" id="langP">displayed</p> -->
+            </h4>
+            <script>
+                let typed = null;
+                const textElement = document.getElementById('typedText');
+                const toggleButton = document.getElementById('toggleButton');
+                let isVisible = false;
+
+                toggleButton.addEventListener('click', () => {
+                    if (!isVisible) {
+                        isVisible = true;
+                        textElement.style.display = 'block';
+                        typed = new Typed('#typedText', {
+                            strings: [">> Python <br> >> JavaScript <br> >> Java <br> >> C-Sharp <br> >> Stata"],
+                            typeSpeed: 50,
+                            showCursor: false,
+                            loop: false,
+                        });
+                    } else {
+                        isVisible = false;
+                        textElement.style.display = 'none';
+                        if (typed !== null) {
+                            typed.destroy();
+                        }
+                    }
+                });
+            </script>
+
+        </div>
+        <div>
+
+            <h4>
+                Projects completed: <p style="display: inline;"> system.out.println(3) </p>;
+                <button onclick="toggleTextIcon(this);" class="exp"><i class="fa fa-play"
+                        aria-hidden="true"></i></button>
+                <div class="expand" style="display: none">
+                    <p> 1. <a href="https://github.com/adityachowdhri/Machine-learning-Shop101">ML Algorithm for
+                            Shop101:</a>
+                        Developed a machine learning algorithm that classified 200,000+ products based on their
+                        description with 97% accuracy
+                    </p>
+                    <p> 2. <a href="https://github.com/adityachowdhri/Coding-Assessment-Fall23"> To-Do List:</a> A
+                        simple to-do list app with, form/input for user to add items to their to-do list, ability to
+                        remove an item on the list after adding, and items persist on the page after a refresh.
+                    </p>
+                    <p> 3. <a href="https://github.com/adityachowdhri/Tarot-Card-Website">Tarot-Card Website</a> Created
+                        a fully functional website for a local business owner. Included database management through
+                        xampp, login system, and booking system.</p>
+                </div>
+            </h4>
+
+
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+            <h4>
+                Work in Progress <p style="display: inline;"> print(2)</p>
+                <button onclick="toggleTextIcon(this)" class="exp"><i class="fa fa-play"
+                        aria-hidden="true"></i></button>
+                <div class="expand" style="display: none">
+                    <p>
+                        1. Desktop Game using Unity and C-Sharp
+                    </p>
+
+                    <p>
+                        2. This website
+                    </p>
+
+
+                </div>
+            </h4>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <a class="exp" style="color: black;"
+            href="https://drive.google.com/file/d/1MHrwoHaShnDM2HjUeioJykiLEZ_yom3V/view?usp=sharing" target="_blank"><i
+                class="fa-solid fa-file footer"></i></a>
+        <a class="exp" style="color: black;" href="https://github.com/adityachowdhri" target="_blank"><i
+                class="fa-brands fa-github footer"></i></a>
+        <a class="exp" style="color: black;" href="https://www.linkedin.com/in/aditya-chowdhri/" target="_blank"><i
+                class="fa-brands fa-linkedin-in footer"></i></a>
+        <a class="exp" style="color: black;" href="mailto:aditya12@bu.edu" target="_blank"><i
+                class="fa-solid fa-envelope footer"></i></a>
+    </div>
+
+
+</body>
+
+</html>
